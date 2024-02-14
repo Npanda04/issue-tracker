@@ -12,7 +12,6 @@ const NewIssuePage = () => {
         <TextField.Root>
             <TextField.Input placeholder = "Title" />
         </TextField.Root>
-
         <TextArea placeholder="description" />
         <Button>Submit New Issue</Button>
     </div>
