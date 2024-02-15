@@ -23,3 +23,11 @@ export async function POST(request: NextRequest){
     return NextResponse.json(newIssue, {status: 200})
 }
 
+export async function GET(){
+    const allIssue = await prisma.issue.findMany()
+    return NextResponse.json(allIssue, {status: 200})
+}
+
+
+
+  
